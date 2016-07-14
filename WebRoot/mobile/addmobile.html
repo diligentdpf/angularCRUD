@@ -1,0 +1,21 @@
+<form>
+<p>{{msg.result}}</p>
+<p>用户姓名：<input type="text" name="mobile.name" ng-model="mobile.name"/></p>
+<p>用户职位：<input type="text" ng-model="mobile.position"/></p>
+<p>用户头像：
+	<select ng-model="mobile.avart" ng-init="mobile.avart='1.gif'">
+		<option value="1.gif">头像一</option>
+		<option value="2.jpg">头像二</option>
+		<option value="3.jpg">头像三</option>
+	</select>
+</p>
+<p>用户电话：<input type="text" ng-model="mobile.mobile"/></p>
+<p><input type="button" value="保存" ng-click="save()"/></p>
+</form>
+
+<hr/>
+预览：
+<p>用户姓名:{{mobile.name}}</p>
+<p>用户职位:{{mobile.postion}}</p>
+<p>用户头像:<img src = "../resource/image/avart/{{mobile.avart}}"/></p>
+<p>用户电话:{{mobile.mobile}}</p>

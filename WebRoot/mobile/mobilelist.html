@@ -1,0 +1,19 @@
+
+  	  <p>
+  	 	搜索：<input type="text" size ="20" maxlength="20" ng-model="mobile"/>
+  	 	<span style="color:red">{{mobile}}</span>
+  	 </p>
+  	 <table ng-init="queryMobile();" >
+  	 		<tr>
+  	 				<td>用户姓名</td>
+  	 				<td>用户头像</td>
+  	 				<td>联系人职位</td>
+  	 				<td>联系人电话</td>
+  	 		</tr>
+  	 		<tr ng-repeat="x in results.mobiles">
+  	 				<td><a href="#/queryMobileById/{{x.id}}">{{x.name}}</a></td>
+  	 				<td><img src="../resource/image/avart/{{x.avart}}"/></td>
+  	 				<td>{{x.position}}</td>
+  	 				<td>{{x.mobile}}</td>
+  	 		</tr>
+  	 </table>
